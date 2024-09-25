@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{355F466B-FA0E-4274-984D-59B91875D6CA}|WSProyecto\\WSProyecto.csproj|e:\\descargas\\proyecto5tociclo\\avance\\wsproyecto\\wsproyecto\\wsproyecto\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355F466B-FA0E-4274-984D-59B91875D6CA}|WSProyecto\\WSProyecto.csproj|solutionrelative:wsproyecto\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}|CADProyecto\\CADProyecto.csproj|E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\cadproyecto\\cadproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}|CADProyecto\\CADProyecto.csproj|solutionrelative:cadproyecto\\cadproyectos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}|CADProyecto\\CADProyecto.csproj|E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\cadproyecto\\dsproyecto.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}|CADProyecto\\CADProyecto.csproj|solutionrelative:cadproyecto\\dsproyecto.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DSProyecto.xsd",
+              "DocumentMoniker": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\CADProyecto\\DSProyecto.xsd",
+              "RelativeDocumentMoniker": "CADProyecto\\DSProyecto.xsd",
+              "ToolTip": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\CADProyecto\\DSProyecto.xsd",
+              "RelativeToolTip": "CADProyecto\\DSProyecto.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-09-17T21:12:18.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CADProyectos.cs",
+              "DocumentMoniker": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\CADProyecto\\CADProyectos.cs",
+              "RelativeDocumentMoniker": "CADProyecto\\CADProyectos.cs",
+              "ToolTip": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\CADProyecto\\CADProyectos.cs",
+              "RelativeToolTip": "CADProyecto\\CADProyectos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:23:41.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebService1.asmx.cs",
+              "DocumentMoniker": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\WSProyecto\\WebService1.asmx.cs",
+              "RelativeDocumentMoniker": "WSProyecto\\WebService1.asmx.cs",
+              "ToolTip": "E:\\Descargas\\proyecto5tociclo\\avance\\WSProyecto\\WSProyecto\\WSProyecto\\WebService1.asmx.cs",
+              "RelativeToolTip": "WSProyecto\\WebService1.asmx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T21:21:53.82Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 25,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://tempuri.org/DSProyecto.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://tempuri.org/DSProyecto.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DSProyecto.xsd" id="DSProyecto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DSProyecto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="almacen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="capacidad" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detalle_pedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="pedido_id" type="xs:int" />
+              <xs:element minOccurs="0" name="producto_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+              <xs:element minOccurs="0" name="precio_unitario" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="kardex">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="producto_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="fecha_movimiento" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="tipo_movimiento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+              <xs:element minOccurs="0" name="saldo" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="usuario_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="cliente_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="fecha_pedido" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="fecha_entrega" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="estado" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="producto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="precio" type="xs:decimal" />
+              <xs:element minOccurs="0" name="stock" type="xs:int" />
+              <xs:element minOccurs="0" name="ubicacion_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rol">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="descripcion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ubicacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="almacen_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="seccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="fila" type="xs:int" />
+              <xs:element minOccurs="0" name="estante" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="usuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="rol_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="contraseña">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="apellido">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:almacen" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="cliente_Constraint1">
+      <xs:selector xpath=".//mstns:cliente" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="detalle_pedido_Constraint1">
+      <xs:selector xpath=".//mstns:detalle_pedido" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="kardex_Constraint1">
+      <xs:selector xpath=".//mstns:kardex" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="pedido_Constraint1">
+      <xs:selector xpath=".//mstns:pedido" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="producto_Constraint1">
+      <xs:selector xpath=".//mstns:producto" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="rol_Constraint1">
+      <xs:selector xpath=".//mstns:rol" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="ubicacion_Constraint1">
+      <xs:selector xpath=".//mstns:ubicacion" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="usuario_Constraint1">
+      <xs:selector xpath=".//mstns:usuario" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="pedido" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="pedido_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Pedido_Cliente" msdata:parent="cliente" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="cliente_id" />
+      <msdata:Relationship name="FK_DetallePedido_Producto" msdata:parent="producto" msdata:child="detalle_pedido" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Kardex_Producto" msdata:parent="producto" msdata:child="kardex" msdata:parentkey="id" msdata:childkey="producto_id" />
+      <msdata:Relationship name="FK_Producto_Ubicacion" msdata:parent="ubicacion" msdata:child="producto" msdata:parentkey="id" msdata:childkey="ubicacion_id" />
+      <msdata:Relationship name="FK_Ubicacion_Almacen" msdata:parent="almacen" msdata:child="ubicacion" msdata:parentkey="id" msdata:childkey="almacen_id" />
+      <msdata:Relationship name="FK_Pedido_Usuario" msdata:parent="usuario" msdata:child="pedido" msdata:parentkey="id" msdata:childkey="usuario_id" />
+      <msdata:Relationship name="FK_Usuario_Rol" msdata:parent="rol" msdata:child="usuario" msdata:parentkey="id" msdata:childkey="rol_id" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

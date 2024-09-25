@@ -1,0 +1,14 @@
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\bin\Debug\CADProyecto.dll.config
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\bin\Debug\CADProyecto.dll
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\bin\Debug\CADProyecto.pdb
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\obj\Debug\CADProyecto.csproj.AssemblyReference.cache
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\obj\Debug\CADProyecto.csproj.CoreCompileInputs.cache
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\obj\Debug\CADProyecto.dll
+C:\Users\asnol\source\repos\WSProyecto\CADProyecto\obj\Debug\CADProyecto.pdb
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\bin\Debug\CADProyecto.dll.config
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\bin\Debug\CADProyecto.dll
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\bin\Debug\CADProyecto.pdb
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\obj\Debug\CADProyecto.csproj.AssemblyReference.cache
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\obj\Debug\CADProyecto.csproj.CoreCompileInputs.cache
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\obj\Debug\CADProyecto.dll
+E:\Descargas\proyecto5tociclo\avance\WSProyecto\WSProyecto\CADProyecto\obj\Debug\CADProyecto.pdb

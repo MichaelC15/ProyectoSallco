@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://localhost/WebService" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://localhost/WebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/WebService">
+      <s:import namespace="http://tempuri.org/DSProyecto.xsd" />
+      <s:import schemaLocation="https://localhost:44385/WebService1.asmx?schema=DSProyecto" namespace="http://tempuri.org/DSProyecto.xsd" />
+      <s:element name="GetUsuarioByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsuarioByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsuarioByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="usuarioDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsuarios">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUsuariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsuariosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="usuarioDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRolByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRolByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRolByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="rolDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRol">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="rolDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUbicacionByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUbicacionByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUbicacionByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="ubicacionDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUbicacion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUbicacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUbicacionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="ubicacionDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductoByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="productoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProducto">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProductoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="productoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPedidoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPedidoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPedidoByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="pedidoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPedido">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPedidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPedidoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="pedidoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKardexByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="kardexDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardex">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetKardexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKardexResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="kardexDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetalleByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetalleByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetalleByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="detalle_pedidoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetalle">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetalleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="detalle_pedidoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClienteByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClienteByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClienteByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="clienteDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCliente">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="clienteDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlmacenByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlmacenByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlmacenByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="almacenDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlmacen">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAlmacenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlmacenResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSProyecto.xsd" name="namespace" />
+                <s:attribute fixed="almacenDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidarUsuarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUsuarioByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsuarioByID" />
+  </wsdl:message>
+  <wsdl:message name="GetUsuarioByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsuarioByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsuariosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="GetUsuariosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRolByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRolByID" />
+  </wsdl:message>
+  <wsdl:message name="GetRolByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRolByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRolSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRol" />
+  </wsdl:message>
+  <wsdl:message name="GetRolSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUbicacionByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUbicacionByID" />
+  </wsdl:message>
+  <wsdl:message name="GetUbicacionByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUbicacionByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUbicacionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="GetUbicacionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetProductoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProducto" />
+  </wsdl:message>
+  <wsdl:message name="GetProductoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPedidoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPedidoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetPedidoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPedidoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPedidoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPedido" />
+  </wsdl:message>
+  <wsdl:message name="GetPedidoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKardexByID" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKardexByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKardex" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKardexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetalleByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetalleByID" />
+  </wsdl:message>
+  <wsdl:message name="GetDetalleByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetalleByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetalle" />
+  </wsdl:message>
+  <wsdl:message name="GetDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClienteByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClienteByID" />
+  </wsdl:message>
+  <wsdl:message name="GetClienteByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClienteByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCliente" />
+  </wsdl:message>
+  <wsdl:message name="GetClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlmacenByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlmacenByID" />
+  </wsdl:message>
+  <wsdl:message name="GetAlmacenByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlmacenByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlmacenSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlmacen" />
+  </wsdl:message>
+  <wsdl:message name="GetAlmacenSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlmacenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="GetUsuarioByID">
+      <wsdl:input message="tns:GetUsuarioByIDSoapIn" />
+      <wsdl:output message="tns:GetUsuarioByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarios">
+      <wsdl:input message="tns:GetUsuariosSoapIn" />
+      <wsdl:output message="tns:GetUsuariosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRolByID">
+      <wsdl:input message="tns:GetRolByIDSoapIn" />
+      <wsdl:output message="tns:GetRolByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRol">
+      <wsdl:input message="tns:GetRolSoapIn" />
+      <wsdl:output message="tns:GetRolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUbicacionByID">
+      <wsdl:input message="tns:GetUbicacionByIDSoapIn" />
+      <wsdl:output message="tns:GetUbicacionByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUbicacion">
+      <wsdl:input message="tns:GetUbicacionSoapIn" />
+      <wsdl:output message="tns:GetUbicacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductoByID">
+      <wsdl:input message="tns:GetProductoByIDSoapIn" />
+      <wsdl:output message="tns:GetProductoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducto">
+      <wsdl:input message="tns:GetProductoSoapIn" />
+      <wsdl:output message="tns:GetProductoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPedidoByID">
+      <wsdl:input message="tns:GetPedidoByIDSoapIn" />
+      <wsdl:output message="tns:GetPedidoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPedido">
+      <wsdl:input message="tns:GetPedidoSoapIn" />
+      <wsdl:output message="tns:GetPedidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexByID">
+      <wsdl:input message="tns:GetKardexByIDSoapIn" />
+      <wsdl:output message="tns:GetKardexByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKardex">
+      <wsdl:input message="tns:GetKardexSoapIn" />
+      <wsdl:output message="tns:GetKardexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetalleByID">
+      <wsdl:input message="tns:GetDetalleByIDSoapIn" />
+      <wsdl:output message="tns:GetDetalleByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetalle">
+      <wsdl:input message="tns:GetDetalleSoapIn" />
+      <wsdl:output message="tns:GetDetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClienteByID">
+      <wsdl:input message="tns:GetClienteByIDSoapIn" />
+      <wsdl:output message="tns:GetClienteByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <wsdl:input message="tns:GetClienteSoapIn" />
+      <wsdl:output message="tns:GetClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlmacenByID">
+      <wsdl:input message="tns:GetAlmacenByIDSoapIn" />
+      <wsdl:output message="tns:GetAlmacenByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlmacen">
+      <wsdl:input message="tns:GetAlmacenSoapIn" />
+      <wsdl:output message="tns:GetAlmacenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuario">
+      <wsdl:input message="tns:ValidarUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidarUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsuarioByID">
+      <soap:operation soapAction="http://localhost/WebService/GetUsuarioByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarios">
+      <soap:operation soapAction="http://localhost/WebService/GetUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolByID">
+      <soap:operation soapAction="http://localhost/WebService/GetRolByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRol">
+      <soap:operation soapAction="http://localhost/WebService/GetRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUbicacionByID">
+      <soap:operation soapAction="http://localhost/WebService/GetUbicacionByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUbicacion">
+      <soap:operation soapAction="http://localhost/WebService/GetUbicacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductoByID">
+      <soap:operation soapAction="http://localhost/WebService/GetProductoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducto">
+      <soap:operation soapAction="http://localhost/WebService/GetProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPedidoByID">
+      <soap:operation soapAction="http://localhost/WebService/GetPedidoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPedido">
+      <soap:operation soapAction="http://localhost/WebService/GetPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexByID">
+      <soap:operation soapAction="http://localhost/WebService/GetKardexByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardex">
+      <soap:operation soapAction="http://localhost/WebService/GetKardex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetalleByID">
+      <soap:operation soapAction="http://localhost/WebService/GetDetalleByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetalle">
+      <soap:operation soapAction="http://localhost/WebService/GetDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClienteByID">
+      <soap:operation soapAction="http://localhost/WebService/GetClienteByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <soap:operation soapAction="http://localhost/WebService/GetCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlmacenByID">
+      <soap:operation soapAction="http://localhost/WebService/GetAlmacenByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlmacen">
+      <soap:operation soapAction="http://localhost/WebService/GetAlmacen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuario">
+      <soap:operation soapAction="http://localhost/WebService/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsuarioByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetUsuarioByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarios">
+      <soap12:operation soapAction="http://localhost/WebService/GetUsuarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetRolByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRol">
+      <soap12:operation soapAction="http://localhost/WebService/GetRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUbicacionByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetUbicacionByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUbicacion">
+      <soap12:operation soapAction="http://localhost/WebService/GetUbicacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductoByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetProductoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducto">
+      <soap12:operation soapAction="http://localhost/WebService/GetProducto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPedidoByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetPedidoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPedido">
+      <soap12:operation soapAction="http://localhost/WebService/GetPedido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetKardexByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardex">
+      <soap12:operation soapAction="http://localhost/WebService/GetKardex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetalleByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetDetalleByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetalle">
+      <soap12:operation soapAction="http://localhost/WebService/GetDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClienteByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetClienteByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <soap12:operation soapAction="http://localhost/WebService/GetCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlmacenByID">
+      <soap12:operation soapAction="http://localhost/WebService/GetAlmacenByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlmacen">
+      <soap12:operation soapAction="http://localhost/WebService/GetAlmacen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuario">
+      <soap12:operation soapAction="http://localhost/WebService/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="https://localhost:44385/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="https://localhost:44385/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

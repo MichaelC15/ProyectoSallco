@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSProyecto", "WSProyecto\WSProyecto.csproj", "{355F466B-FA0E-4274-984D-59B91875D6CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADProyecto", "CADProyecto\CADProyecto.csproj", "{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{355F466B-FA0E-4274-984D-59B91875D6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355F466B-FA0E-4274-984D-59B91875D6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355F466B-FA0E-4274-984D-59B91875D6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355F466B-FA0E-4274-984D-59B91875D6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8009561E-4183-4EC2-9BBD-DF91C9FA84AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4BA70D3-A1C3-4E50-9925-883E3E4FFF32}
+	EndGlobalSection
+EndGlobal
